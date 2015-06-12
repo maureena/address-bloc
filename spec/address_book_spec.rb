@@ -122,7 +122,7 @@ RSpec.describe AddressBook do
       book.import_from_csv("entries.csv")
       entry = book.binary_search("Susie")
       expect entry.instance_of?(Entry)
-      check_entry(entry, "Susi", "555-555-5555", "susie@blocmail.com")
+      check_entry(entry, "Susie", "555-555-5555", "susie@blocmail.com")
     end
 
     it "searches AddressBook for Billy" do
